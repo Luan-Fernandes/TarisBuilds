@@ -1,0 +1,78 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image:  url(../Images/planodefundo.png);
+    background-size: cover;
+}
+.container-main-home{
+    margin-top: 50vh;
+    width: 500px;
+    line-height:14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-main-home div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-main-home img{
+    width: 300px;
+    animation: img 1s ease ;
+}
+@keyframes img {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+.container-main-home p{
+    color: rgba(255, 255, 255, 0.733);
+    position: relative;
+    bottom: 2.5vh;
+    animation: p 1.5s ease;
+}
+@keyframes p {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+.buttonHome{
+    padding: 10px;
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid;
+    margin-top: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    animation: p 2s ease ;
+}
+.buttonHome:hover{
+    border-radius: 20px;
+}
+@keyframes button {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+    }
+}

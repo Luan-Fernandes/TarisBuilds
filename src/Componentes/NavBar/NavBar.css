@@ -1,0 +1,270 @@
+.container-pai{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    background-color: #251211bd;
+    position: fixed;
+}
+.container-pai figure{
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.container-pai figure img{
+    width: 100%;
+}
+
+.container-pai ul{
+    height: 10vh;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+
+}
+.container-pai li, .container-pai figure{
+    cursor: pointer;
+}
+.container-pai li{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom:4px solid transparent;
+    transition: .5s;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.container-pai li:hover{
+    text-shadow: rgb(194, 194, 194) 0.1em 0.1em 0.2em;
+}
+.container-pai li a{
+    color: white;
+    transition: 1s ease;
+}
+.liActivo{
+    transition: 1s ease;
+    color: white;
+    text-shadow: rgb(194, 194, 194) 0.1em 0.1em 0.2em;
+}
+.loginecad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.loginecad a{
+    color: white;
+    cursor: pointer;
+}
+.registro{
+    border: 1px solid;
+    padding: 10px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.registroActivo{
+    border: 1px solid;
+    padding: 10px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    border-radius: 20px;
+    text-shadow: rgb(241, 239, 239) 0.1em 0.1em 0.2em; 
+}
+.registro:hover{
+    border-radius: 20px;
+    text-shadow: rgb(133, 133, 133) 0.1em 0.1em 0.2em;
+}
+.login{
+    padding: 10px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginActivo{
+    padding: 10px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: rgb(241, 239, 239) 0.1em 0.1em 0.2em; 
+}
+.login:hover{
+    text-shadow: rgb(133, 133, 133) 0.1em 0.1em 0.2em;
+}
+.perfilActivo figure {
+     width: 5.5rem;
+     height: 5.5rem ;
+     border-radius: 50px;
+     color: white;
+     border: 1px solid;
+}
+.perfil figure {
+    width: 5.5rem;
+    height: 5.5rem ;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid;
+}
+.p{
+     color: white;
+     cursor: pointer;
+}
+.perfilActivo{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom:10px ;
+    align-items: center;
+    margin-top: 15rem;
+    width: 20%;
+    height: 60vh;
+    gap: 30px;
+    background-color: rgb(209, 206, 206);
+    opacity: 50%;  
+    transition: 1s;
+    transform:  translateY(-90vh);
+}
+.perfil{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom:10px ;
+    align-items: center;
+    margin-top: 15rem;
+    width: 20%;
+    height: 60vh;
+    gap: 30px;
+    background-color: rgb(209, 206, 206);
+    transition: 1s;
+}
+
+.buttonPerfil{
+    border: 0;
+    margin-top: 30px;
+    margin-bottom: 5rem;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    background-color: rgba(255, 0, 0, 0.644);
+}
+
+.iconnav{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-1{
+    width: 70%;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.container-1Active{
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+    color: red;
+    transition: .3s ease;
+}
+
+.container-2{
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.container-2Active{
+    border: 1px solid;
+    transform: translateX(100px);
+    opacity: 0;
+    width: 0;
+    transition: .3s ease;
+}
+
+.container-3{
+    width: 70%;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.container-3Active{
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 10px;
+    color: red;
+    transition: .3s ease;
+}
+
+.machadoLogadoHome{
+    width: 35px;
+    position:relative;
+    left:4rem;
+    transform: rotate(360deg); 
+    animation: mPro 1s;
+    transition: 1s;
+}
+.machadoLogadoPro{
+    width: 35px;
+    position:relative;
+    left:8.7rem;
+    transform: rotate(360deg); 
+    animation: mPro 1s;
+    transition: 1s;
+}
+.machadoLogadoNova{
+    width: 35px;
+    position:relative;
+    left:16.3rem;
+    transform: rotate(360deg); 
+    animation: mPro 1s;
+    transition: 1s;
+}
+.machadoLogadoNovoT{
+    width: 35px;
+    position:relative;
+    left:3.3rem;
+    transform: rotate(360deg); 
+    animation: mPro 1s;
+    transition: 1s;
+}
+
+
+
+
+@keyframes mPro {
+    from{
+         transform:rotate(-360deg);
+    }
+    to{
+        transform:rotate(0);
+    }
+}

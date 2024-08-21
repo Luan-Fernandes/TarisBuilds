@@ -1,0 +1,10 @@
+.error{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.644);
+    margin-top: 10px;
+    width: 30%;
+}
