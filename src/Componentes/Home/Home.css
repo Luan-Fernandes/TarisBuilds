@@ -7,6 +7,7 @@
     flex-direction: column;
     background-image:  url(../Images/planodefundo.png);
     background-size: cover;
+    overflow-x: hidden;
 }
 .container-main-home{
     margin-top: 50vh;

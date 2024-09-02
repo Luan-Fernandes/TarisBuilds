@@ -1,0 +1,175 @@
+.container-main-pedra{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    width: 1000px;
+    height: 90vh;
+    margin-top:12vh;
+}
+
+.section-pedra{
+    width: 500px;
+    height: 85vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #251211bd;
+    border-radius: 30px;
+}
+.section-pedra div{
+    width: 100%;
+    height: 13vh;
+}
+.section-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 50vh;
+    background-color: rgba(245, 222, 179, 0.836);
+    margin-top: 5vh;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.div-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    border: 1px solid;
+    width: 90%;
+}
+@media (max-width: 1000px) {
+    .container-main-pedra{
+        flex-direction: column;
+        width: 500px;
+        height: 100vh;
+    }
+    .section-desc{
+        width: 500px;
+        height: 70vh;
+        border: 1px solid white;
+    }
+  }
+
+/*começo dos estilos das pedras*/
+/*estilos padroes*/
+.linha-padrao{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.linha4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+}
+.container-linha4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 0;
+}
+.linha5{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:65px;
+}
+.linha6{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 45px;
+}
+.container1-linha6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2-linha6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linha7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+.linha8{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+}
+.container-linha8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 0;
+}
+.linha9{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:65px;
+}
+.linha10{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 45px;
+}
+.linha11{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 45px;
+}
+.container1-linha11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container2-linha11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linha12{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+}
+.container-linha12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 0;
+}
+.container-linha13{
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 95%;
+}
+.container-linha14{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 95%;
+}
+.linha15{
+display: flex;
+justify-content: space-around;
+gap: 100px;
+align-items: center;
+}

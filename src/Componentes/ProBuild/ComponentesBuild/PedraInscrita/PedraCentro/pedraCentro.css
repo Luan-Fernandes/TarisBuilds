@@ -1,0 +1,29 @@
+#container-pedra-centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 80px;
+    cursor: pointer;
+    line-height: 1px;
+    border: 0;
+}
+#container-component-pedra{
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    border-radius: 80px;
+}
+#pontos-distribuidos{
+    display: flex;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 10px;
+    border: 0;
+  
+}

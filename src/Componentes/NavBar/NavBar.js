@@ -27,12 +27,12 @@ const NavBar = () => {
     const [navbar, setNavBar] = useState(false)
     const getInitialStep = () => {
         const savedStep = sessionStorage.getItem('step');
-        return savedStep !== null ? savedStep : 0;
+        return savedStep !== null ? JSON.parse(savedStep): 0;
       };
     const [step, setStep] = useState(getInitialStep)
 
     useEffect(() => {
-        sessionStorage.setItem('step', step);
+        sessionStorage.setItem('step', JSON.stringify(step));
       }, [step]);
       
     console.log(history)
