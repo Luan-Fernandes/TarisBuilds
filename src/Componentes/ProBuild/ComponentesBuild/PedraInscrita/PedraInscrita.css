@@ -19,25 +19,7 @@
     width: 100%;
     height: 13vh;
 }
-.section-desc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 400px;
-    height: 50vh;
-    background-color: rgba(245, 222, 179, 0.836);
-    margin-top: 5vh;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-.div-desc{
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
-    border: 1px solid;
-    width: 90%;
-}
+
 @media (max-width: 1000px) {
     .container-main-pedra{
         flex-direction: column;
@@ -172,4 +154,72 @@ display: flex;
 justify-content: space-around;
 gap: 100px;
 align-items: center;
+}
+/* Fim dos estilos das linhas*/
+
+/* estilos do form*/
+
+.form-build{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.label-padrao{
+    width: 100%;
+}
+.input-padrao{
+    width: 100%;
+    height: 20px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+.textarea{
+    resize: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.678);
+}
+.h1-padrao{
+    font-weight: 900;
+}
+.nome-padrao{
+    font-weight: 400;
+}
+.section-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 50vh;
+    background-color: rgba(245, 222, 179, 0.836);
+    margin-top: 5vh;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.button-pedra{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.521);
+    transition: .5s;
+    font-weight: bold;
+}
+.button-pedra:hover{
+    background-color: red;
+}
+.div-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+    width: 90%;
 }
