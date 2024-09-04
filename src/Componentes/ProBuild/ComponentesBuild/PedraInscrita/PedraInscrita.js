@@ -18,19 +18,19 @@ const PedraInscrita = () => {
   //variaveis das pedras
 
   //linha1
-  const [linha1A, setLinha1A] = useState(0)
+  const [linha1A, setLinha1A] = useState(1)
 
   //linha2
   const [linha2A, setLinha2A] = useState(0)
-  const [linha2B, setLinha2B] = useState()
-  const [linha2C, setLinha2C] = useState()
+  const [linha2B, setLinha2B] = useState(0)
+  const [linha2C, setLinha2C] = useState(0)
 
   //linha3
-  const [linha3A, setLinha3A] = useState()
-  const [linha3B, setLinha3B] = useState()
-  const [linha3C, setLinha3C] = useState()
-  const [linha3D, setLinha3D] = useState()
-  const [linha3E, setLinha3E] = useState()
+  const [linha3A, setLinha3A] = useState(0)
+  const [linha3B, setLinha3B] = useState(0)
+  const [linha3C, setLinha3C] = useState(0)
+  const [linha3D, setLinha3D] = useState(0)
+  const [linha3E, setLinha3E] = useState(0)
 
   //linha4
   const [linha4A, setLinha4A] = useState()
@@ -165,13 +165,17 @@ const PedraInscrita = () => {
             <PedraNormal />
           </div>
           <section className='linha-padrao'>
-            <PedraNormal /><PedraNormal /> <PedraNormal /><PedraNormal /><PedraNormal />
+            <PedraNormal state={linha3A} setState={setLinha3A} pedraAnterior1={linha2A} pedraAnterior2={0} pedraAnterior3={0}  />
+            <PedraNormal state={linha3B} setState={setLinha3B} pedraAnterior1={linha2A} pedraAnterior2={linha2B} pedraAnterior3={linha2C}/>
+             <PedraNormal state={linha3C} setState={setLinha3C} pedraAnterior1={linha2A} pedraAnterior2={linha2B} pedraAnterior3={linha2C}/>
+             <PedraNormal state={linha3D} setState={setLinha3D} pedraAnterior1={0} pedraAnterior2={linha2B} pedraAnterior3={linha2C}/>
+             <PedraNormal state={linha3E} setState={setLinha3E} pedraAnterior1={linha2A} pedraAnterior2={linha2B} pedraAnterior3={linha2C}/>
           </section>
           <div className='linha-padrao'>
-            <PedraNormal  state={linha2A} setState={setLinha2A} /><PedraNormal /> <PedraNormal />
+            <PedraNormal  state={linha2A} setState={setLinha2A} /><PedraNormal state={linha2B} setState={setLinha2B} /> <PedraNormal state={linha2C} setState={setLinha2C} />
           </div>
           <div className='linha-padrao'>
-            <PedraCentro />
+            <PedraCentro state={linha1A} stateDeQnt={1} />
           </div>
         </section>
 

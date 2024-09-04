@@ -1,13 +1,13 @@
 import './pedraCentro.css'
 
-const PedraCentro = () => {
+const PedraCentro = ({ state,stateDeQnt }) => {
   return (
     <div id='container-pedra-centro'>
        <div id='container-component-pedra'></div>
        <div id='pontos-distribuidos'>
-        <p>0</p>
+        <p>{state}</p>
         <p>/</p>
-        <p>3</p>
+        <p>{stateDeQnt}</p>
        </div>
     </div>
   )
